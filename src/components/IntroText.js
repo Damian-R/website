@@ -1,5 +1,15 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const slideUp = keyframes`
+    from {
+        transform: translate(-50%, -43%);
+    }
+
+    to {
+        transform: translate(-50%, -50%);
+    }
+`
 
 const Wrapper = styled.section`
     padding: 4rem
@@ -8,6 +18,7 @@ const Wrapper = styled.section`
     left: 50%;
     transform: translate(-50%, -50%);
     letter-spacing: 2px
+    animation: ${slideUp} 1s ease-out
 `
 
 export default ({children}) => (

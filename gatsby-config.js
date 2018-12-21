@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Damian Reiter's Personal Website`,
+    description: `My personal website to showcase projects.`,
     author: `@Damian Reiter`,
   },
   plugins: [
@@ -11,6 +11,12 @@ module.exports = {
       options: {
         pathToConfigModule: `src/utils/typography.js`
       },
+    },
+    {
+      resolve: `gatsby-plugin-page-transitions`,
+      options: {
+        transitionTime: 700
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
