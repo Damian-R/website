@@ -11,7 +11,6 @@ const IndexPage = () => (
       <IntroText>
         <h1>Something is coming</h1>
         <p>Under construction</p>
-        <p></p>
       </IntroText>
       <Footer />
     </Main>

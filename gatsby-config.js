@@ -12,6 +12,7 @@ module.exports = {
         pathToConfigModule: `src/utils/typography.js`
       },
     },
+    `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
