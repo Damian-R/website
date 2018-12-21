@@ -12,12 +12,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography.js`
       },
     },
-    {
-      resolve: `gatsby-plugin-page-transitions`,
-      options: {
-        transitionTime: 700
-      }
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     // this (optional) plugin enables Progressive Web App + Offline functionality

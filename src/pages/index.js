@@ -3,11 +3,10 @@ import IntroText from '../components/IntroText'
 import Particles from 'react-particles-js'
 import particlesConfig from '../config/particles'
 import Footer from '../components/Footer'
-import PageTransition from 'gatsby-plugin-page-transitions'
+import Main from '../components/Main'
 
 const IndexPage = () => (
-  <PageTransition>
-    <div class="main">
+    <Main>
       <Particles style={particlesConfig.style} params={particlesConfig.params} />
       <IntroText>
         <h1>Something is coming</h1>
@@ -15,8 +14,7 @@ const IndexPage = () => (
         <p></p>
       </IntroText>
       <Footer />
-    </div>
-  </PageTransition>
+    </Main>
 )
 
 export default IndexPage
