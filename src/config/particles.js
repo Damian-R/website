@@ -8,7 +8,7 @@ const params = {
           }
         },
         "color": {
-          "value": "#1b1e34"
+          "value": "#33eeee"
         },
         "shape": {
           "type": "polygon",

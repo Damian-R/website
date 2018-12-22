@@ -11,6 +11,7 @@ const IndexPage = () => (
       <IntroText>
         <h1>Something is coming</h1>
         <p>Under construction</p>
+        <a href="https://damian-reiter.herokuapp.com" style={{ textDecoration: 'none' }}>visit old site</a>
       </IntroText>
       <Footer />
     </Main>
