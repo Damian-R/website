@@ -15,7 +15,7 @@ const typography = new Typography({
     headerFontFamily: ['Nunito'],
     bodyFontFamily: ['Nunito'],
     headerWeight: '900',
-    bodyWeight: '700'
+    bodyWeight: '400'
 })
 
 export default typography

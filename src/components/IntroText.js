@@ -3,20 +3,20 @@ import styled, { keyframes } from 'styled-components'
 
 const slideUp = keyframes`
     from {
-        transform: translate(-50%, -43%);
+        transform: translate(0, 5%);
     }
 
     to {
-        transform: translate(-50%, -50%);
+        transform: translate(0, 0);
     }
 `
 
 const Wrapper = styled.section`
     padding: 4rem;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 650px;
+    top: 10%;
+    left: 10%;
     letter-spacing: 2px;
     animation: ${slideUp} 1s ease-out;
 `
