@@ -1,29 +1,25 @@
 // Components
 import React from 'react'
+import { Link } from 'gatsby'
 import IntroText from '../components/IntroText'
-import Particles from 'react-particles-js'
 import Footer from '../components/Footer'
-import Main from '../components/Main'
-import Name from '../components/Name'
+import Header from '../components/Header'
 import Text from '../components/Text'
 import FunFacts from '../components/FunFacts'
-
-// Configs
-import particlesConfig from '../config/particles'
 
 const NUM_FACTS = 4
 
 const IndexPage = () => (
-    <Main>
-      <Particles style={particlesConfig.style} params={particlesConfig.params} />
+  <div>
       <IntroText>
         <Text>my name is</Text>
-        <Name>Damian</Name>
+        <Header>Damian</Header>
         <Text>and I am a...</Text>
         <FunFacts facts={NUM_FACTS} />
+        <Link to="/about">about</Link>
       </IntroText>
       <Footer />
-    </Main>
+  </div>
 )
 
 export default IndexPage

@@ -1,15 +1,18 @@
 import React from 'react'
-import styled, { keyframes } from 'styled-components'
+import posed, { PoseGroup } from 'react-pose'
 
-const fadeIn = keyframes`
-  from { opacity: 0 };
-  to   { opacity: 1 };
-`
+const Transition = posed.div({
+  enter: {
+    opacity: 1,
+    transition: { duration: 500 },
+    delay: 500,
+    beforeChildren: true
+  },
+  exit: { opacity: 0, transition: { duration: 500 } }
+})
 
-const Main = styled.section`
-  animation: ${fadeIn} 1.5s
-`
-
-export default ({children}) => (
-    <Main>{children}</Main>
+export default ({children, ...props}) => (
+  <PoseGroup>
+    <Transition key={props.location.pathname}>{children}</Transition>
+  </PoseGroup>
 )
