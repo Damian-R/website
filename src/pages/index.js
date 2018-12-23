@@ -6,18 +6,10 @@ import Footer from '../components/Footer'
 import Main from '../components/Main'
 import Name from '../components/Name'
 import Text from '../components/Text'
-import SlidingText from '../components/SlidingText'
+import FunFacts from '../components/FunFacts'
 
 // Configs
 import particlesConfig from '../config/particles'
-
-const funFacts = [
-  'computer engineering student',
-  'ex-volleyball player',
-  'top 50 overwatch player',
-  'aspiring software engineer',
-  'another fact'
-]
 
 const IndexPage = () => (
     <Main>
@@ -26,7 +18,7 @@ const IndexPage = () => (
         <Text>my name is</Text>
         <Name>Damian</Name>
         <Text>and I am a...</Text>
-        <SlidingText text='sliding text'></SlidingText>
+        <FunFacts facts={3} />
       </IntroText>
       <Footer />
     </Main>
