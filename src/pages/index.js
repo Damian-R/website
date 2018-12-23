@@ -11,6 +11,8 @@ import FunFacts from '../components/FunFacts'
 // Configs
 import particlesConfig from '../config/particles'
 
+const NUM_FACTS = 4
+
 const IndexPage = () => (
     <Main>
       <Particles style={particlesConfig.style} params={particlesConfig.params} />
@@ -18,7 +20,7 @@ const IndexPage = () => (
         <Text>my name is</Text>
         <Name>Damian</Name>
         <Text>and I am a...</Text>
-        <FunFacts facts={3} />
+        <FunFacts facts={NUM_FACTS} />
       </IntroText>
       <Footer />
     </Main>

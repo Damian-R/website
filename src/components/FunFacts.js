@@ -5,25 +5,31 @@ import _ from 'lodash'
 
 const SECONDS_TO_STAGGER = 0.75
 
-const funFacts = [
+const funFacts = _.shuffle([
   'computer engineering student',
-  'ex-volleyball player',
+  'hackathon winner',
   'top 50 overwatch player',
   'aspiring software engineer',
-  'another fact',
-  'more facts',
-  'this is another thing'
-]
+  'clean coder',
+  'dad joke lover',
+  'amateur guitarist',
+  'dog person',
+  'thing'
+])
 
 const Wrapper = styled.section`
   padding: 5%
 `
 
+// len / size = # sub arrays
 class FunFacts extends React.Component {
   constructor(props) {
     super(props)
-    this.chunkedFacts = _.chunk(_.shuffle(funFacts), props.facts)
-    console.log(this.chunkedFacts)
+    this.chunkedFacts = []
+    _.times(props.facts, () => this.chunkedFacts.push([]))
+    for (let i = 0; i < funFacts.length; i++) {
+      this.chunkedFacts[i % props.facts].push(funFacts[i])
+    }
   }
 
   render() {

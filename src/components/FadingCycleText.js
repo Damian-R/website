@@ -17,7 +17,6 @@ const Text = posed.div({
 class FadingCycleText extends React.Component {
   constructor(props) {
     super(props)
-    console.log(props.texts)
     this.state = { visible: true, text: this.getRandomText(null) }
     this.toggleVisibility = this.toggleVisibility.bind(this)
     this.getRandomText = this.getRandomText.bind(this)
