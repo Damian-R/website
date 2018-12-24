@@ -6,6 +6,4 @@ const Header = styled.section`
   font-weight: 900;
 `
 
-export default ({children}) => (
-  <Header>{children}</Header>
-)
+export default ({ children }) => <Header>{children}</Header>

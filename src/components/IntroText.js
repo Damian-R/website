@@ -12,17 +12,13 @@ const slideUp = keyframes`
 `
 
 const Wrapper = styled.section`
-    padding: 4rem;
-    position: fixed;
-    width: 650px;
-    top: 10%;
-    left: 10%;
-    letter-spacing: 2px;
-    animation: ${slideUp} 1s ease-out;
+  padding: 4rem;
+  position: fixed;
+  width: 650px;
+  top: 10%;
+  left: 10%;
+  letter-spacing: 2px;
+  animation: ${slideUp} 1s ease-out;
 `
 
-export default ({children}) => (
-    <Wrapper>
-        {children}
-    </Wrapper>
-)
+export default ({ children }) => <Wrapper>{children}</Wrapper>

@@ -6,12 +6,12 @@ const Transition = posed.div({
     opacity: 1,
     transition: { duration: 500 },
     delay: 500,
-    beforeChildren: true
+    beforeChildren: true,
   },
-  exit: { opacity: 0, transition: { duration: 500 } }
+  exit: { opacity: 0, transition: { duration: 500 } },
 })
 
-export default ({children, ...props}) => (
+export default ({ children, ...props }) => (
   <PoseGroup>
     <Transition key={props.location.pathname}>{children}</Transition>
   </PoseGroup>

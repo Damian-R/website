@@ -14,11 +14,11 @@ const funFacts = _.shuffle([
   'dad joke lover',
   'amateur guitarist',
   'dog person',
-  'thing'
+  'thing',
 ])
 
 const Wrapper = styled.section`
-  padding: 5%
+  padding: 5%;
 `
 
 // len / size = # sub arrays
@@ -33,11 +33,17 @@ class FunFacts extends React.Component {
   }
 
   render() {
-    return ( <Wrapper>
-      {_.times(this.props.facts, i =>
-        <FadingCycleText texts={this.chunkedFacts[i]} key={i} delay={SECONDS_TO_STAGGER*i*1000} />
-      )}
-    </Wrapper>)
+    return (
+      <Wrapper>
+        {_.times(this.props.facts, i => (
+          <FadingCycleText
+            texts={this.chunkedFacts[i]}
+            key={i}
+            delay={SECONDS_TO_STAGGER * i * 1000}
+          />
+        ))}
+      </Wrapper>
+    )
   }
 }
 

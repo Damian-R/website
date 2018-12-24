@@ -2,9 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Wrapper = styled.section`
+  padding: 2rem;
   position: fixed;
-  bottom: 2%;
-  left: 7%;
+  top: 10%;
+  left: 15%;
 `
 
-export default () => <Wrapper>@ Damian Reiter 2018</Wrapper>
+export default ({ children }) => <Wrapper>{children}</Wrapper>
