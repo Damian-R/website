@@ -7,8 +7,11 @@ const typography = new Typography({
       name: 'Nunito',
       styles: ['400', '700', '900'],
     },
+    {
+      name: 'Open Sans',
+      styles: ['400', '700']
+    }
   ],
-  headerFontFamily: ['Nunito'],
   bodyFontFamily: ['Nunito'],
   headerWeight: '900',
   bodyWeight: '400',
