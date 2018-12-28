@@ -3,7 +3,10 @@ import styled from 'styled-components'
 
 const Wrapper = styled.section`
   position: fixed;
-  margin: 10% 15%;
+  top: 10%;
+  bottom: 0;
+  left: 15%;
+  right: 15%
 `
 
 export default ({ children }) => <Wrapper>{children}</Wrapper>

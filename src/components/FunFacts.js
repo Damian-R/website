@@ -2,20 +2,11 @@ import React from 'react'
 import FadingCycleText from '../components/FadingCycleText'
 import styled from 'styled-components'
 import _ from 'lodash'
+import funFacts from '../utils/funFacts'
 
 const SECONDS_TO_STAGGER = 0.75
 
-const funFacts = _.shuffle([
-  'computer engineering student',
-  'hackathon winner',
-  'top 50 overwatch player',
-  'aspiring software engineer',
-  'clean coder',
-  'dad joke lover',
-  'amateur guitarist',
-  'dog person',
-  'thing',
-])
+const shuffledFunFacts = _.shuffle(funFacts)
 
 const Wrapper = styled.section`
   padding: 5%;
@@ -27,8 +18,8 @@ class FunFacts extends React.Component {
     super(props)
     this.chunkedFacts = []
     _.times(props.facts, () => this.chunkedFacts.push([]))
-    for (let i = 0; i < funFacts.length; i++) {
-      this.chunkedFacts[i % props.facts].push(funFacts[i])
+    for (let i = 0; i < shuffledFunFacts.length; i++) {
+      this.chunkedFacts[i % props.facts].push(shuffledFunFacts[i])
     }
   }
 
