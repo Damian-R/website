@@ -1,5 +1,6 @@
 import React from 'react'
 import posed, { PoseGroup } from 'react-pose'
+import Nav from './Nav'
 
 const Transition = posed.div({
   enter: {
@@ -13,6 +14,9 @@ const Transition = posed.div({
 
 export default ({ children, ...props }) => (
   <PoseGroup>
-    <Transition key={props.location.pathname}>{children}</Transition>
+    <Transition key={props.location.pathname}>
+      <Nav fadeIn={true} />
+      {children}
+    </Transition>
   </PoseGroup>
 )

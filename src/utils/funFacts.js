@@ -3,11 +3,10 @@ const funFacts = [
     'hackathon winner',
     'top 50 overwatch player',
     'aspiring software engineer',
-    'clean coder',
+    'extra fact',
     'dad joke lover',
     'amateur guitarist',
     'dog person',
-    'thing',
 ]
 
 export default funFacts;

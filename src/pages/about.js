@@ -1,15 +1,14 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import TextWrapper from '../components/TextWrapper'
+import PageWrapper from '../components/PageWrapper'
 import Header from '../components/Header'
 import QuickFacts from '../components/QuickFacts'
 
 const AboutPage = () => (
-  <TextWrapper>
+  <PageWrapper>
     <Header>About Me</Header>
     <QuickFacts />
-    <Link to="/">Home</Link>
-  </TextWrapper>
+  </PageWrapper>
 )
 
 export default AboutPage
