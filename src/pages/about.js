@@ -1,13 +1,14 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import PageWrapper from '../components/PageWrapper'
 import Header from '../components/Header'
 import QuickFacts from '../components/QuickFacts'
+import FactList from '../components/FactList'
 
 const AboutPage = () => (
   <PageWrapper>
     <Header>About Me</Header>
     <QuickFacts />
+    <FactList />
   </PageWrapper>
 )
 

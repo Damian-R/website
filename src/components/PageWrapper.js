@@ -18,6 +18,9 @@ const Wrapper = styled.div`
     top: 15%;
     right: 15%;
     left: 15%;
+    bottom: 10%;
+    display: flex;
+    flex-flow: column;
     animation: ${fadeInSlideUp} 0.7s ease-out
 `
 

@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import _ from 'lodash'
-import funFacts from '../utils/funFacts'
 
 const quickFacts = [
     {
@@ -19,7 +18,6 @@ const quickFacts = [
 ]
 
 const Wrapper = styled.section`
-    
 `
 
 const QuickFactList = styled.section`
@@ -50,20 +48,6 @@ const Text = styled.section`
     left: 5px;
 `
 
-const FactList = styled.section`
-    margin-top: 2em;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
-    row-gap: 1em
-`
-
-// probably have to make this a react component to use states n stuff
-const Fact = styled.section`
-    cursor: pointer;
-    text-align: center
-`
-
 // forEach didn't work as expected so I used lodash
 export default () => (
     <Wrapper>
@@ -75,11 +59,5 @@ export default () => (
                 </QuickFact>
             ))}
         </QuickFactList>
-        
-        <FactList>
-            {_.times(funFacts.length, i => (
-                <Fact>{funFacts[i]}</Fact>
-            ))}
-        </FactList>
     </Wrapper>
 )

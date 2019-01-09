@@ -52,7 +52,7 @@ class FadingCycleText extends React.Component {
   render() {
     return (
       <Text pose={this.state.visible ? 'visible' : 'hidden'}>
-        {this.state.text}
+        {this.state.text.title}
       </Text>
     )
   }
