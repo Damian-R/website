@@ -2,6 +2,7 @@ import React from 'react'
 import styled, { keyframes } from 'styled-components'
 import _ from 'lodash'
 import funFacts from '../utils/funFacts'
+import HexImage from '../components/HexImage'
 
 const Wrapper = styled.div`
 
@@ -37,9 +38,11 @@ const ArrowBox = styled.div`
     background: #ffffff;
     border: 1px solid #c2e1f5;
     margin-top: 2.5rem;
-    padding: 1rem;
+    padding: 1rem 3rem 1rem 3rem;
     border-radius: 5px;
     animation: ${fadeIn} 0.5s ease-out;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 
     &::after, &::before {
         bottom: 100%;
@@ -68,6 +71,10 @@ const ArrowBox = styled.div`
     }
 `
 
+const Image = styled.section`
+    background-color: red;
+`
+
 class FactList extends React.Component {
     constructor(props) {
         super(props)
@@ -84,7 +91,12 @@ class FactList extends React.Component {
                 </FactContainer>
                 {this.state.selectedFact &&
                     <ArrowBox arrowPos={this.state.selectedFact.offset}>
-                        {this.state.selectedFact.desc}
+                        <div id="text">
+                            {_.times(this.state.selectedFact.desc.length, i => (
+                                <span>{this.state.selectedFact.desc[i]}<br /></span>
+                            ))}
+                        </div>
+                        <HexImage url={this.state.selectedFact.image} index={this.state.selectedFact.offset} />
                     </ArrowBox>
                 }
             </Wrapper>

@@ -13,6 +13,7 @@ const Container = styled.div`
 const NavLinks = styled.div`
     display: inline;
     transition: opacity 0.4s ease-out;
+    vertical-align: text-bottom;
     opacity: ${props => props.active ? 1 : 0}
 `
 
@@ -32,7 +33,7 @@ class Nav extends React.Component {
                     lineHeight={2}
                 />
                 <NavLinks active={this.state.active}>
-                    <Link to="/">home</Link> <Link to="/about">about</Link>
+                    <Link to="/">home</Link> <Link to="/about">about</Link> <Link to="/about">projects</Link> <Link to="/about">experience</Link> 
                 </NavLinks>
             </Container>
         )

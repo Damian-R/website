@@ -7,4 +7,4 @@ const Wrapper = styled.section`
   left: 7%;
 `
 
-export default () => <Wrapper>@ Damian Reiter 2018</Wrapper>
+export default () => <Wrapper>@ Damian Reiter 2018 | 👷🚧 Under Construction</Wrapper>
