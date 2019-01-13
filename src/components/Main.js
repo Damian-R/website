@@ -1,6 +1,14 @@
 import React from 'react'
 import posed, { PoseGroup } from 'react-pose'
+import { createGlobalStyle } from 'styled-components'
 import Nav from './Nav'
+
+// global styles
+const GlobalStyle = createGlobalStyle`
+  a {
+    text-decoration: none;
+  }
+`
 
 const Transition = posed.div({
   enter: {
@@ -17,6 +25,7 @@ export default ({ children, ...props }) => (
     <Transition key={props.location.pathname}>
       <Nav fadeIn={true} />
       {children}
+      <GlobalStyle key={props.location.pathname} />
     </Transition>
   </PoseGroup>
 )

@@ -14,7 +14,7 @@ const HexImage = styled.div`
     border-right: solid 5px #333333;
     margin-right: 2rem;
     transform: rotate(${props => -5 + props.index * 2}deg);
-    transition: all 0.5s;
+    transition: all 0.5s, background-size 1ms;
     
     &::after {
         content: "";

@@ -38,7 +38,7 @@ const ArrowBox = styled.div`
     background: #ffffff;
     border: 1px solid #c2e1f5;
     margin-top: 2.5rem;
-    padding: 1rem 3rem 1rem 3rem;
+    padding: 2rem 3rem 2rem 3rem;
     border-radius: 5px;
     animation: ${fadeIn} 0.5s ease-out;
     display: grid;
@@ -71,10 +71,6 @@ const ArrowBox = styled.div`
     }
 `
 
-const Image = styled.section`
-    background-color: red;
-`
-
 class FactList extends React.Component {
     constructor(props) {
         super(props)
@@ -91,11 +87,12 @@ class FactList extends React.Component {
                 </FactContainer>
                 {this.state.selectedFact &&
                     <ArrowBox arrowPos={this.state.selectedFact.offset}>
-                        <div id="text">
+                        <Wrapper>
                             {_.times(this.state.selectedFact.desc.length, i => (
-                                <span>{this.state.selectedFact.desc[i]}<br /></span>
+                                <div style={{margin: "1rem 0 0 0"}} 
+                                     dangerouslySetInnerHTML={{ __html: this.state.selectedFact.desc[i] }} />
                             ))}
-                        </div>
+                        </Wrapper>
                         <HexImage url={this.state.selectedFact.image} index={this.state.selectedFact.offset} />
                     </ArrowBox>
                 }

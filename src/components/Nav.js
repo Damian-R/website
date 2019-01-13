@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import { ArrowReverse } from 'react-burgers'
+import Text from './Text'
 
 const Container = styled.div`
     position: fixed;
@@ -12,6 +13,7 @@ const Container = styled.div`
 
 const NavLinks = styled.div`
     display: inline;
+    font-size: 1.1rem;
     transition: opacity 0.4s ease-out;
     vertical-align: text-bottom;
     opacity: ${props => props.active ? 1 : 0}
@@ -33,7 +35,7 @@ class Nav extends React.Component {
                     lineHeight={2}
                 />
                 <NavLinks active={this.state.active}>
-                    <Link to="/">home</Link> <Link to="/about">about</Link> <Link to="/about">projects</Link> <Link to="/about">experience</Link> 
+                    <b><Link to="/">home</Link> <Link to="/about">about</Link> <Link to="/about">projects</Link> <Link to="/about">experience</Link></b>
                 </NavLinks>
             </Container>
         )

@@ -3,26 +3,32 @@ const funFacts = [
         title: 'computer engineering student',
         offset: 1,
         desc: [
-            'I am currently in my 2A term at the University of Waterloo, majoring in Computer Engineering.',
-            'It is a 5-year co-op program, so I complete a 4-month work term after every study term.'
+            'I am second year student at the <b>University of Waterloo</b>, majoring in Computer Engineering.',
+            'It is a 5-year co-op program, so I complete a <b>4-month work term</b> after every study term. You can read more about my previous work here.',
+            'I am <b>always looking for new opprotunities</b>, so if you are an employer, feel free to <b>contact me here</b>! You can view my <b>resume, transcript and previous co-op evaluations here</b>.',
         ],
-        image: 'https://i.cbc.ca/1.3285415.1471381382!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/university-of-waterloo.jpg'
+        image: '/img/waterloo.jpg'
     },
     {
         title: 'hackathon winner',
         offset: 2,
         desc: [
-            'hackathon winner desc'
+            'I have been to two hackathons,'
         ],
-        image: 'https://dare2compete.com/bites/wp-content/uploads/2018/10/hackathon.jpg'
+        image: '/img/hackathon.jpg'
     },
     {
         title: 'top 50 overwatch player',
         offset: 3,
         desc: [
-            'top 50 overwatch player desc'
+            'I enjoy good competition, and always try to be the best at what I do.',
+            'I have always been interested in competitive games, but decided to take Overwatch extra seriously.',
+            'At my peak, I was ranked <b>top 50 in North America</b>. I stopped playing shortly after in order to focus on University applications as I was in grade 12 at the time.',
+            'Over my last co-op term, however, I started playing again and joined the University of Waterloo Overwatch Team, where I had the opprotunity to play against other North American Universities and Colleges.',
+            'We ended up finishing in <a href="https://compete.tespa.org/tournament/111/leaderboard" target="_blank"><b>9th place out of 474 schools!</b></a>',
+            'It was a very fun experience, and hopefully this result will help get eSports recognized by the University!'
         ],
-        image: 'https://i.ytimg.com/vi/j4oLG0Um6sE/maxresdefault.jpg'
+        image: '/img/tespa.jpg'
     },
     {
         title: 'aspiring software engineer',
@@ -30,7 +36,7 @@ const funFacts = [
         desc: [
             'aspiring software engineer desc'
         ],
-        image: 'https://cdn.shopify.com/s/files/1/1380/2059/products/Carrot-Orange_grande.jpg?v=1480318421'
+        image: '/img/software.jpg'
     },
     {
         title: 'extra fact',
@@ -52,7 +58,9 @@ const funFacts = [
         title: 'amateur guitarist',
         offset: 3,
         desc: [
-            'amateur guitarist desc'
+            'Over each co-op term, I try to learn at least one new non-technical skill.',
+            'Most recently, I have started to pick up guitar! I play acoustic, and prefer learning fingerstyle songs.',
+            ''
         ],
         image: 'http://csshexagon.com/img/meow.jpg'
     },

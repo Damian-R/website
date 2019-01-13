@@ -1,9 +1,10 @@
 import React from 'react'
 import posed from 'react-pose'
+import styled from 'styled-components'
 
 const FADE_TIME = 500
 
-const Text = posed.div({
+const PosedText = posed.div({
   visible: {
     opacity: 1,
     transition: { duration: FADE_TIME },
@@ -13,6 +14,10 @@ const Text = posed.div({
     transition: { duration: FADE_TIME },
   },
 })
+
+const Text = styled(PosedText)`
+  font-size: 1.5rem;
+`
 
 class FadingCycleText extends React.Component {
   constructor(props) {
