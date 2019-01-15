@@ -13,9 +13,11 @@ const funFacts = [
         title: 'hackathon winner',
         offset: 2,
         desc: [
-            'I have been to two hackathons,'
+            'I\'m a big fan of hackathons. I\'ve been to two so far, and have had a blast at both.',
+            'My first ever hackathon was <b>DeltaHacks IV</b> at <b>McMaster University</b>. Myself and three other first-year friends teamed up to make <b><a href="https://github.com/Damian-R/doctor-dms">Doctor DMs</a></b>. We ended up winning <b>\'Best use of StdLib\'</b> and were a finalist for <b>\'Best Hack Overall\'</b>, along with a <b>Nintendo Switch for each team member</b>! (I am second from the left 😄)',
+            'My second hackathon experience was at <b>EngHack 2018</b>, right here at the <b>University of Waterloo</b>. At this event, my team and I made <b><a href="https://github.com/Damian-R/lendify">Lendify</a></b> and were one of three winners of <b>\'Best Hack\'</b>!'
         ],
-        image: '/img/hackathon.jpg'
+        image: '/img/deltahacks.jpg'
     },
     {
         title: 'top 50 overwatch player',
