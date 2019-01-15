@@ -36,7 +36,14 @@ const funFacts = [
         title: 'aspiring software engineer',
         offset: 4,
         desc: [
-            'aspiring software engineer desc'
+            `When I wrote my first lines of code only a few years ago in my highschool CS class, I would never have imagined the journey it would lead me on.
+            <b>I have met amazing people, worked for really cool companies, and brought ambitious ideas to life all while having a blast</b>.
+            I have learned <b>so much</b> in the past few years and don't plan on slowing down any time soon.`,
+            `<b><i>The reason that I have progressed so much is because I have a genuine passion for solving problems with software.</b></i>`,
+            `Every <b>internship, course, hackathon, project, and error</b> puts me one step closer to acheiving my goals.`,
+            `This is what I love to do, and I am very excited to see where this paths leads.`,
+            '',
+            `<i>I am always looking for internship opportunities. Contact me here.</i>`
         ],
         image: '/img/software.jpg'
     },
@@ -49,10 +56,10 @@ const funFacts = [
         image: 'http://csshexagon.com/img/meow.jpg'
     },
     {
-        title: 'dad joke lover',
+        title: 'dad joke endurer',
         offset: 2,
         desc: [
-            'dad joke lover desc'
+            'Here are some of the <del>worst</del> <b>best</b> I know. Sorry in advance.'
         ],
         image: 'http://csshexagon.com/img/meow.jpg'
     },
@@ -60,9 +67,9 @@ const funFacts = [
         title: 'amateur guitarist',
         offset: 3,
         desc: [
-            'Over each co-op term, I try to learn at least one new non-technical skill.',
+            'I\'m always looking to improve upon myself both professionally and personally.',
+            'That\'s why I set a goal for myself over each co-op term to <b>learn at least one new non-technical skill</b>',
             'Most recently, I have started to pick up guitar! I play acoustic, and prefer learning fingerstyle songs.',
-            ''
         ],
         image: 'http://csshexagon.com/img/meow.jpg'
     },
