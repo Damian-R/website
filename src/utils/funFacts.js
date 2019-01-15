@@ -5,19 +5,24 @@ const funFacts = [
         desc: [
             'I am second year student at the <b>University of Waterloo</b>, majoring in Computer Engineering.',
             'It is a 5-year co-op program, so I complete a <b>4-month work term</b> after every study term. You can read more about my previous work here.',
-            'I am <b>always looking for new opprotunities</b>, so if you are an employer, feel free to <b>contact me here</b>! You can view my <b>resume, transcript and previous co-op evaluations here</b>.',
+            'I am <b>always looking for new opportunities</b>, so if you are an employer, feel free to <b>contact me here</b>! You can view my <b>resume, transcript and previous co-op evaluations here</b>.',
         ],
         image: '/img/waterloo.jpg'
     },
     {
-        title: 'hackathon winner',
+        title: 'aspiring software engineer',
         offset: 2,
         desc: [
-            'I\'m a big fan of hackathons. I\'ve been to two so far, and have had a blast at both.',
-            'My first ever hackathon was <b>DeltaHacks IV</b> at <b>McMaster University</b>. Myself and three other first-year friends teamed up to make <b><a href="https://github.com/Damian-R/doctor-dms">Doctor DMs</a></b>. We ended up winning <b>\'Best use of StdLib\'</b> and were a finalist for <b>\'Best Hack Overall\'</b>, along with a <b>Nintendo Switch for each team member</b>! (I am second from the left 😄)',
-            'My second hackathon experience was at <b>EngHack 2018</b>, right here at the <b>University of Waterloo</b>. At this event, my team and I made <b><a href="https://github.com/Damian-R/lendify">Lendify</a></b> and were one of three winners of <b>\'Best Hack\'</b>!'
+            `When I wrote my first lines of code only a few years ago in my highschool CS class, I would never have imagined the journey it would lead me on.
+            <b>I have met amazing people, worked for really cool companies, and brought ambitious ideas to life all while having a blast</b>.
+            I have learned <b>so much</b> in the past few years and don't plan on slowing down any time soon.`,
+            `<b><i>The reason that I have progressed so much is because I have a genuine passion for solving problems with software.</b></i>`,
+            `Every <b>internship, course, hackathon, project, and error</b> puts me one step closer to acheiving my goals.`,
+            `This is what I love to do, and I am very excited to see where this paths leads.`,
+            '',
+            `<i>I am always looking for internship opportunities. Contact me here.</i>`
         ],
-        image: '/img/deltahacks.jpg'
+        image: '/img/software.jpg'
     },
     {
         title: 'top 50 overwatch player',
@@ -33,19 +38,14 @@ const funFacts = [
         image: '/img/tespa.jpg'
     },
     {
-        title: 'aspiring software engineer',
+        title: 'hackathon winner',
         offset: 4,
         desc: [
-            `When I wrote my first lines of code only a few years ago in my highschool CS class, I would never have imagined the journey it would lead me on.
-            <b>I have met amazing people, worked for really cool companies, and brought ambitious ideas to life all while having a blast</b>.
-            I have learned <b>so much</b> in the past few years and don't plan on slowing down any time soon.`,
-            `<b><i>The reason that I have progressed so much is because I have a genuine passion for solving problems with software.</b></i>`,
-            `Every <b>internship, course, hackathon, project, and error</b> puts me one step closer to acheiving my goals.`,
-            `This is what I love to do, and I am very excited to see where this paths leads.`,
-            '',
-            `<i>I am always looking for internship opportunities. Contact me here.</i>`
+            'I\'m a big fan of hackathons. I\'ve been to two so far, and have had a blast at both.',
+            'My first ever hackathon was <b>DeltaHacks IV</b> at <b>McMaster University</b>. Myself and three other first-year friends teamed up to make <b><a href="https://github.com/Damian-R/doctor-dms">Doctor DMs</a></b>. We ended up winning <b>\'Best use of StdLib\'</b> and were a finalist for <b>\'Best Hack Overall\'</b>, along with a <b>Nintendo Switch for each team member</b>! (I am second from the left 😄)',
+            'My second hackathon experience was at <b>EngHack 2018</b>, right here at the <b>University of Waterloo</b>. At this event, my team and I made <b><a href="https://github.com/Damian-R/lendify">Lendify</a></b> and were one of three winners of <b>\'Best Hack\'</b>!'
         ],
-        image: '/img/software.jpg'
+        image: '/img/deltahacks.jpg'
     },
     {
         title: 'extra fact',
