@@ -29,7 +29,7 @@ class FadingCycleText extends React.Component {
 
   componentDidMount() {
     setTimeout(() => {
-      this.visibleTimer = setInterval(this.toggleVisibility, 6000)
+      this.visibleTimer = setInterval(this.toggleVisibility, 5000)
     }, this.props.delay)
   }
 
