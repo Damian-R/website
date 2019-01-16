@@ -35,7 +35,7 @@ class Nav extends React.Component {
                     lineHeight={2}
                 />
                 <NavLinks active={this.state.active}>
-                    <b><Link to="/">home</Link> <Link to="/about">about</Link> <Link to="/about">projects</Link> <Link to="/about">experience</Link></b>
+                    <b><Link to="/">home</Link> <Link to="/about">about</Link> <Link to="/projects">projects</Link> <Link to="/about">experience</Link></b>
                 </NavLinks>
             </Container>
         )
