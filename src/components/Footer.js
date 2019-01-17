@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Wrapper = styled.section`
-  position: fixed;
+  position: absolute;
   bottom: 2%;
   left: 7%;
 `

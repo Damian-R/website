@@ -1,13 +1,10 @@
 import React from 'react'
 import Header from '../components/Header'
-import PageWrapper from '../components/PageWrapper'
-import Projects from '../components/Projects'
 
 const ProjectsPage = () => (
-    <PageWrapper>
+    <div>
         <Header>Projects</Header>
-        <Projects />
-    </PageWrapper>
+    </div>
 )
 
 export default ProjectsPage

@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import { ArrowReverse } from 'react-burgers'
-import Text from './Text'
 
 const Container = styled.div`
     position: fixed;
