@@ -1,13 +1,26 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { Link } from 'gatsby'
 import { ArrowReverse } from 'react-burgers'
+
+const fadeInSlideUp = keyframes`
+    from {
+        opacity: 0;
+        transform: translate(0, 10%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+`
 
 const Container = styled.div`
     position: fixed;
     top: 7%;
     left: 10%;
     letter-spacing: 2px;
+    animation: ${fadeInSlideUp} 1s;
 `
 
 const NavLinks = styled.div`
