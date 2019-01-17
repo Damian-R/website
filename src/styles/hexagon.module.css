@@ -1,0 +1,12 @@
+.hexagon { width: 25% }
+.hexagon:not(:first-child) {
+    margin-left: 15%;
+}
+
+.row:nth-child(1n+2) {
+  margin-top: -10.3%;
+}
+
+.row:nth-child(2n) :first-child {
+  margin-left: 20%;
+}
